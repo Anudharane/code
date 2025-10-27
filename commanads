@@ -1,0 +1,70 @@
+🧩 1) Configure Your Git User Information
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+
+✅ Explanation:
+Sets your identity so Git can record who made the commits.
+Use --global to apply this setting to all repositories on your system.
+
+📥 2) Clone the Repository
+git clone https://github.com/<username>/<repository-name>.git
+
+
+✅ Explanation:
+Copies (downloads) a GitHub repository to your local computer.
+
+✍️ 3) Edit the README.txt File
+
+Open the file:
+
+notepad README.txt
+
+
+(or use VS Code: code README.txt)
+
+Add your name under contributors or anywhere appropriate.
+
+Save and close the file.
+
+🔍 4) Check the Status of Your Repository
+git status
+
+
+✅ Explanation:
+Shows which files have been modified, added, or are ready to commit.
+
+📦 5) Stage the Changes
+git add README.txt
+
+
+✅ Explanation:
+Marks README.txt to be included in the next commit.
+
+🧾 6) Commit Your Changes
+git commit -m "Added my name to contributors list in README.txt"
+
+
+✅ Explanation:
+Saves your staged changes in the local repository with a descriptive message.
+
+☁️ 7) Push Your Changes to the Remote Repository
+git push origin main
+
+
+✅ Explanation:
+Uploads your committed changes to the main branch of your GitHub repository.
+
+(If branch is master, use git push origin master.)
+
+🌿 8) Create and Switch to a New Branch
+git checkout -b feature/add-my-name
+
+
+✅ Explanation:
+Creates a new branch called feature/add-my-name and switches to it.
+
+📜 9) Demonstrate the git log Command
+git log
+
+
