@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    stages {
+        stage('Author name') {
+            steps {
+                echo "This job is executed by ${params.whoami}"
+            }
+        }
+        stage('Creating file') {
+            steps {
+                echo "Filename: ${params.filename}"
+                echo "Creating..."
+                bat "echo \"Hello geeks\" > ${params.filename}"
+                echo "File successfully created."
+            }
+        }
+    }
+}
